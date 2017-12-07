@@ -1,2 +1,3 @@
 # First_Forum
-Don't work without created Mysql database.
+
+Note: Doesn't work without created Mysql database.

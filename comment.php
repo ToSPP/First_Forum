@@ -1,35 +1,26 @@
 <?php 
 class Comment
 {
-	protected $name;
-	protected $msg;
-	protected $ts;
+	use Message;
+
+	protected $topicID;
+	protected $table 	= 'comments';
+	protected $fields 	= 'name, msg, topicID';
+	protected $cols		= ['name', 'msg', 'ts'];
 
 	public function __construct($name, $msg)
 	{
-		$this->setname($name);
-		$this->setmsg($msg);
+		$this->setName($name);
+		$this->setMsg($msg);
+		$this->getTopicID();
+		$this->values = [$this->name, $this->msg, $this->topicID];
+		$db = new DB_connect();
+		$db->setData($this->table, $this->fields, $this->values);
 	}
 
-	protected function setname($name)
+	protected function getTopicID()
 	{
-		$this->name = trim(strip_tags($name));
-		if (strlen($this->name) > 32) {
-			throw new Exception("Name is too long (max 32 char.)");
-		}
-	}
-
-	protected function setmsg($msg)
-	{
-		$this->msg = htmlspecialchars($msg);
-		if (strlen($this->msg) > 300) {
-			throw new Exception("Message is too long (max 300 char.)");
-		}
-	}
-
-	protected function getdata()
-	{
-
+		$this->topicID = $_GET['topic'];
 	}
 
 }

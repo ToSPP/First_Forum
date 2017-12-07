@@ -1,0 +1,144 @@
+body {
+	margin: 0 auto;
+	width: 500px;
+}
+
+.intro {
+	margin-top: -15px;
+	margin-bottom: 35px;
+}
+
+.topicBox {
+	margin-top: 20px;
+}
+
+.topicBox h3 {
+	margin: 5px 0; 
+}
+
+.topicBox h3 > a {
+	text-decoration: none;
+	color: #224E89;
+}
+
+.topicBox h3 > a:hover {
+	text-decoration: underline;
+}
+
+.topicBox p {
+	margin: 3px 0;
+}
+
+.commentBox {
+	margin-top: 20px;
+}
+
+.commentBox p {
+	margin: 3px 0;
+}
+
+.pagination {
+	margin: 30px 0;
+}
+
+.pagination ul {
+	padding: 0;
+}
+
+.pagination ul li {
+	display: inline-block;
+	border: 1px solid #ccc;
+	color: #aaa;
+	line-height: 1.85;
+}
+
+.pagination ul li a {
+	text-decoration: none;
+	color: #224E89;
+}
+
+.pagination .disabled {
+	padding: 0px 10px;
+}
+
+.pagination .active a {
+	color: #FFF;
+	background-color: #3C9DD0;
+	border: 1px solid #3C9DD0;
+}
+
+.pagination .prev-page {
+	border-radius: 3px 0 0 3px;
+	margin-right: -1px;
+}
+
+.pagination .prev-page a {
+	padding: 7px 10px;
+}
+
+.pagination .next-page {
+	border-radius: 0 3px 3px 0;	
+}
+
+.pagination .next-page a {
+	padding: 7px 10px;
+}
+
+.pagination .page {
+	margin-right: -1px;
+}
+
+.pagination .page a {
+	padding: 6px 10px;
+}
+
+.addName, .addTitle, .addText {
+	width: 100%;
+	padding: 7px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: -10px;
+}
+
+.addText {
+	min-height: 150px;
+	resize: vertical;
+}
+
+.btnAddComment {
+	width: 100%;
+	margin-top: -5px;
+	padding: 7px;
+	color: #FFF;
+	font-weight: bold;
+	border: 1px solid #8DC8E8;
+	border-radius: 3px;
+	background-color: #8DC8E8;
+}
+
+.btnAddComment:hover {
+	border: 1px solid #3C9DD0;
+	background-color: #3C9DD0;
+}
+
+.addTopicSuccess {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 13px 12px;
+	color: #224E89;
+	border: 1px solid #6CBCE8;
+	border-radius: 3px;
+	background-color: #8DC8E8;
+}
+
+.notice {
+	width: 100%;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	padding: 13px 12px;
+	color: #A62525;
+	border: 1px solid #FFC5C5;
+	border-radius: 3px;
+	background-color: #FFB2B2;
+}
